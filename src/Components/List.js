@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import "./UsersList.css";
+import "./List.css";
 import "antd/dist/antd.css";
 import ReactPaginate from "react-paginate";
 import { AiFillDelete, AiFillEdit } from "react-icons/ai";
@@ -50,7 +50,7 @@ function UsersList() {
   };
 
   // Edit Data by Click
-  const editUserDetails = () => {};
+  const editUserDetails = () => { };
   console.log("PageVisited: ", pageVisited);
   return (
     <div className="container">
@@ -61,7 +61,7 @@ function UsersList() {
         placeholder=" Search by any field "
         onChange={(e) => setSearchUser(e.target.value)}
       />
-
+  
       <table className="table">
         <tr>
           <th>
